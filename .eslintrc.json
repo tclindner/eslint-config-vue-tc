@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "eslint-config-tc",
+    "./index.js"
+  ]
+}
