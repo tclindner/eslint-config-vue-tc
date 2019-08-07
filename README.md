@@ -43,7 +43,7 @@ Add the following to your `.eslintrc.json` file:
 }
 ```
 
-If you need to override a rule, your `.eslintrc.json` file should look like the example below. All shared rules will be used, but `eqeqeq` will be turned off.
+If you need to override a rule, your `.eslintrc.json` file should look like the example below. All shared rules will be used, but `vue/require-direct-export` will be turned off.
 
 ```json
 {
