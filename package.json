@@ -1,0 +1,61 @@
+{
+  "name": "eslint-config-vue-tc",
+  "version": "1.0.0",
+  "description": "ESLint shareable config for Vue projects",
+  "keywords": [
+    "eslintconfig",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "eslint",
+    "code style",
+    "vue"
+  ],
+  "homepage": "https://github.com/tclindner/eslint-config-vue-tc",
+  "bugs": {
+    "url": "https://github.com/tclindner/eslint-config-vue-tc/issues"
+  },
+  "author": "Thomas Lindner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tclindner/eslint-config-vue-tc.git"
+  },
+  "files": [
+    "index.js",
+    "rules",
+    "CONTRIBUTING.md"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint . --format=node_modules/eslint-formatter-pretty",
+    "lint": "npm run npmpackagejsonlint && npm run eslint",
+    "npmpackagejsonlint": "npmPkgJsonLint .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-tc": "^7.0.0",
+    "eslint-formatter-pretty": "^2.1.1",
+    "eslint-plugin-import": "^2.18.1",
+    "eslint-plugin-jest": "^22.14.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "is-plain-obj": "^2.0.0",
+    "jest": "^24.8.0",
+    "npm-package-json-lint": "^3.7.0",
+    "npm-package-json-lint-config-tc": "^2.2.0",
+    "prettier": "^1.18.2"
+  },
+  "peerDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.3"
+  },
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
