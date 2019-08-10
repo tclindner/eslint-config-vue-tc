@@ -12,6 +12,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 
 
+## [1.1.0] - 2019-08-10
+### Changed
+* Support for ESLint 6.
+
 ## [1.0.0] - 2019-08-05
 
 * Added [`vue/require-direct-export`](https://eslint.vuejs.org/rules/require-direct-export.html)
