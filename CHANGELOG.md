@@ -12,6 +12,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 
 
+## [1.1.1] - 2019-08-11
+### Fixed
+* Compatibility issue between Prettier and Vue Plugin.
+
 ## [1.1.0] - 2019-08-10
 ### Changed
 * Support for ESLint 6.

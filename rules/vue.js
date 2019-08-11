@@ -1,5 +1,6 @@
 module.exports = {
   rules: {
+    'vue/max-attributes-per-line': 'off',
     'vue/require-direct-export': 'error',
     'vue/no-empty-pattern': 'off',
     // 'vue/no-deprecated-scope-attribute': 'error',
@@ -11,6 +12,7 @@ module.exports = {
         shouldMatchCase: false
       }
     ],
-    'vue/component-name-in-template-casing': ['error', 'kebab-case']
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    'vue/name-property-casing': ['error', 'kebab-case']
   }
 };
