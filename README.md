@@ -31,7 +31,7 @@ npx install-peerdeps --dev eslint-config-vue-tc
 
 > eslint and eslint-plugin-vue are peer dependencies and must be installed.
 
-**This module works best when paired with [`eslint-config-tc`](https://github.com/tclindner/eslint-config-tc). Please follow it's install instructions.**
+**This module works best when paired with [`eslint-config-tc`](https://github.com/tclindner/eslint-config-tc). Please follow its install instructions.**
 
 ## Usage
 
