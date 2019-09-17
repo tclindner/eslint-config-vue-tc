@@ -13,6 +13,18 @@ module.exports = {
       }
     ],
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
-    'vue/name-property-casing': ['error', 'kebab-case']
+    'vue/name-property-casing': ['error', 'kebab-case'],
+    'vue/html-self-closing': [
+      'warn',
+      {
+        html: {
+          void: 'always',
+          normal: 'always',
+          component: 'always'
+        },
+        svg: 'always',
+        math: 'always'
+      }
+    ]
   }
 };
