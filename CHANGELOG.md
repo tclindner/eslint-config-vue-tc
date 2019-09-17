@@ -12,6 +12,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 
 
+## [2.0.1] - 2019-09-16
+### Fixed
+* #19 - Resolved a compatibility issue between prettier and eslint-plugin-vue. Thanks, @conrad2134 :tada:
+
 ## [2.0.0] - 2019-09-05
 ### Added
 * Add eslint-plugin-vue-a11y
