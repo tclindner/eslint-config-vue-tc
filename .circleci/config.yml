@@ -3,61 +3,62 @@ jobs:
   build:
     docker:
       - image: circleci/node:8
-    working_directory: ~/repo
     steps:
       - checkout
       - run: npm install
       - run: npm run lint
       - persist_to_workspace:
-          root: ~/repo
-          paths: .
+          root: ~/
+          paths:
+            - project
   test-node8:
     docker:
       - image: circleci/node:8
-    working_directory: ~/repo
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/
       - run: npm test
   test-node9:
     docker:
       - image: circleci/node:9
-    working_directory: ~/repo
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/
       - run: npm test
   test-node10:
     docker:
       - image: circleci/node:10
-    working_directory: ~/repo
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/
       - run: npm test
   test-node11:
     docker:
       - image: circleci/node:11
-    working_directory: ~/repo
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/
       - run: npm test
   test-node12:
     docker:
       - image: circleci/node:12
-    working_directory: ~/repo
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/
+      - run: npm test
+  test-node13:
+    docker:
+      - image: circleci/node:13
+    steps:
+      - attach_workspace:
+          at: ~/
       - run: npm test
   publish-beta:
     docker:
       - image: circleci/node:10
-    working_directory: ~/repo
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" >> ~/.npmrc
@@ -67,10 +68,9 @@ jobs:
   publish-stable:
     docker:
       - image: circleci/node:10
-    working_directory: ~/repo
     steps:
       - attach_workspace:
-          at: ~/repo
+          at: ~/
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" >> ~/.npmrc
@@ -116,6 +116,12 @@ workflows:
           filters:
             tags:
               only: /.*/
+      - test-node13:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /.*/
       - publish-beta:
           requires:
             - test-node8
@@ -123,6 +129,7 @@ workflows:
             - test-node10
             - test-node11
             - test-node12
+            - test-node13
           filters:
             tags:
               only: /^v\d*\.\d*\.\d*-beta\.\d*$/
@@ -136,6 +143,7 @@ workflows:
             - test-node10
             - test-node11
             - test-node12
+            - test-node13
           filters:
             tags:
               only: /^v\d*\.\d*\.\d*$/
