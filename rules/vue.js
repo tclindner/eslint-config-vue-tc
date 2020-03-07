@@ -26,6 +26,7 @@ module.exports = {
     'vue/name-property-casing': ['error', 'kebab-case'],
     'vue/no-boolean-default': 'error',
     'vue/no-empty-pattern': 'error',
-    'vue/require-direct-export': 'error'
+    'vue/require-direct-export': 'error',
+    'vue/v-slot-style': 'error'
   }
 };
