@@ -27,6 +27,7 @@ module.exports = {
     'vue/no-boolean-default': 'error',
     'vue/no-empty-pattern': 'error',
     'vue/require-direct-export': 'error',
+    'vue/valid-v-slot': 'error',
     'vue/v-slot-style': 'error'
   }
 };
