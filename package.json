@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vue-tc",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "ESLint shareable config for Vue projects",
   "keywords": [
     "eslintconfig",
@@ -57,7 +57,7 @@
     "eslint-plugin-vue-a11y": "^0.0.31"
   },
   "engines": {
-    "node": ">=8.0.0",
+    "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
