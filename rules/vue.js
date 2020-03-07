@@ -29,6 +29,7 @@ module.exports = {
     'vue/no-deprecated-slot-scope-attribute': 'error',
     'vue/no-empty-pattern': 'error',
     'vue/no-reserved-component-names': 'error',
+    'vue/padding-line-between-blocks': 'error',
     'vue/require-direct-export': 'error',
     'vue/valid-v-slot': 'error',
     'vue/v-slot-style': 'error'
