@@ -25,6 +25,7 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     'vue/name-property-casing': ['error', 'kebab-case'],
     'vue/no-boolean-default': 'error',
+    'vue/no-deprecated-slot-attribute': 'error',
     'vue/no-empty-pattern': 'error',
     'vue/require-direct-export': 'error',
     'vue/valid-v-slot': 'error',
