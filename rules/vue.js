@@ -14,6 +14,7 @@ module.exports = {
         math: 'always'
       }
     ],
+    'vue/keyword-spacing': 'error',
     'vue/match-component-file-name': [
       'error',
       {
