@@ -31,6 +31,7 @@ module.exports = {
     'vue/no-reserved-component-names': 'error',
     'vue/padding-line-between-blocks': 'error',
     'vue/require-direct-export': 'error',
+    'vue/require-name-property': 'error',
     'vue/valid-v-slot': 'error',
     'vue/v-slot-style': 'error'
   }
