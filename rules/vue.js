@@ -28,6 +28,7 @@ module.exports = {
     'vue/no-deprecated-slot-attribute': 'error',
     'vue/no-deprecated-slot-scope-attribute': 'error',
     'vue/no-empty-pattern': 'error',
+    'vue/no-irregular-whitespace': 'error',
     'vue/no-reserved-component-names': 'error',
     'vue/padding-line-between-blocks': 'error',
     'vue/require-direct-export': 'error',
