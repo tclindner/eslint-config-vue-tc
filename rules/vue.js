@@ -1,5 +1,6 @@
 module.exports = {
   rules: {
+    'vue/component-definition-name-casing': 'error',
     'vue/component-name-in-template-casing': 'error',
     'vue/dot-location': 'error',
     'vue/html-self-closing': [
