@@ -5,10 +5,10 @@ const vuex = require.resolve('./rules/vuex');
 module.exports = {
   extends: ['plugin:vue/recommended', a11y, vue, vuex],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
   },
   plugins: ['vue', 'vue-a11y'],
   env: {
-    es6: true
-  }
+    es6: true,
+  },
 };

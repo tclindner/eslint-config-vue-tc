@@ -6,8 +6,8 @@ module.exports = {
     'vue-a11y/aria-role': [
       2,
       {
-        ignoreNonDOM: true
-      }
+        ignoreNonDOM: true,
+      },
     ],
     'vue-a11y/aria-props': 'error',
     'vue-a11y/aria-unsupported-elements': 'error',
@@ -25,6 +25,6 @@ module.exports = {
     'vue-a11y/no-onchange': 'error',
     'vue-a11y/no-redundant-roles': 'error',
     'vue-a11y/role-has-required-aria-props': 'error',
-    'vue-a11y/tabindex-no-positive': 'error'
-  }
+    'vue-a11y/tabindex-no-positive': 'error',
+  },
 };

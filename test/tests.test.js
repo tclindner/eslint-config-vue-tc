@@ -38,7 +38,7 @@ describe('eslint config tests', () => {
       const expectedErrorColumnNum = 16;
       const linter = new eslint.CLIEngine({
         useEslintrc: false,
-        configFile: '.eslintrc.json'
+        configFile: '.eslintrc.json',
       });
       const errors = linter.executeOnText(code).results[0].messages;
       const error = errors[0];

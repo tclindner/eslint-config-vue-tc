@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vue-tc",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "ESLint shareable config for Vue projects",
   "keywords": [
     "eslintconfig",
@@ -36,20 +36,20 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-config-tc": "^11.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-tc": "^12.0.0",
     "eslint-formatter-pretty": "^3.0.1",
     "eslint-plugin-eslint-comments": "^3.1.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jest": "^23.8.2",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.2.2",
     "eslint-plugin-vue-a11y": "^0.0.31",
     "is-plain-obj": "^2.1.0",
     "jest": "^25.3.0",
     "npm-package-json-lint": "^4.6.0",
     "npm-package-json-lint-config-tc": "^3.0.0",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.4"
   },
   "peerDependencies": {
     "eslint": "^6.0.0",
