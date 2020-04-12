@@ -42,6 +42,7 @@ module.exports = {
     'vue/prop-name-casing': 'error',
     'vue/require-direct-export': 'error',
     'vue/require-name-property': 'error',
+    'vue/valid-v-bind-sync': 'error',
     'vue/valid-v-slot': 'error',
     'vue/v-slot-style': 'error',
   },
