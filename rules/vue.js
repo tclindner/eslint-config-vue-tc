@@ -39,6 +39,7 @@ module.exports = {
     // Add with v7 of eslint-plugin-vue when it is released.
     // 'vue/no-v-model-argument': 'error',
     'vue/padding-line-between-blocks': 'error',
+    'vue/prop-name-casing': 'error',
     'vue/require-direct-export': 'error',
     'vue/require-name-property': 'error',
     'vue/valid-v-slot': 'error',
