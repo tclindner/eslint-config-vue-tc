@@ -27,11 +27,17 @@ module.exports = {
     'vue/max-attributes-per-line': 'off',
     'vue/name-property-casing': ['error', 'kebab-case'],
     'vue/no-boolean-default': 'error',
+    // Add with v7 of eslint-plugin-vue when it is released.
+    // 'vue/no-custom-modifiers-on-v-model': 'error',
     'vue/no-deprecated-slot-attribute': 'error',
     'vue/no-deprecated-slot-scope-attribute': 'error',
     'vue/no-empty-pattern': 'error',
     'vue/no-irregular-whitespace': 'error',
+    // Add with v7 of eslint-plugin-vue when it is released.
+    // 'vue/no-multiple-template-root': 'error',
     'vue/no-reserved-component-names': 'error',
+    // Add with v7 of eslint-plugin-vue when it is released.
+    // 'vue/no-v-model-argument': 'error',
     'vue/padding-line-between-blocks': 'error',
     'vue/require-direct-export': 'error',
     'vue/require-name-property': 'error',
