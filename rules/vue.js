@@ -8,19 +8,19 @@ module.exports = {
         html: {
           void: 'always',
           normal: 'always',
-          component: 'always'
+          component: 'always',
         },
         svg: 'always',
-        math: 'always'
-      }
+        math: 'always',
+      },
     ],
     'vue/keyword-spacing': 'error',
     'vue/match-component-file-name': [
       'error',
       {
         extensions: ['jsx'],
-        shouldMatchCase: false
-      }
+        shouldMatchCase: false,
+      },
     ],
     'vue/max-attributes-per-line': 'off',
     'vue/name-property-casing': ['error', 'kebab-case'],
@@ -34,6 +34,6 @@ module.exports = {
     'vue/require-direct-export': 'error',
     'vue/require-name-property': 'error',
     'vue/valid-v-slot': 'error',
-    'vue/v-slot-style': 'error'
-  }
+    'vue/v-slot-style': 'error',
+  },
 };

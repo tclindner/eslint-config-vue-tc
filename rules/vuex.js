@@ -6,9 +6,9 @@ module.exports = {
         props: true,
         ignorePropertyModificationsFor: [
           // vuex
-          'state'
-        ]
-      }
-    ]
-  }
+          'state',
+        ],
+      },
+    ],
+  },
 };
