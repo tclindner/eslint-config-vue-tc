@@ -25,7 +25,6 @@ module.exports = {
       },
     ],
     'vue/max-attributes-per-line': 'off',
-    'vue/name-property-casing': ['error', 'kebab-case'],
     'vue/no-boolean-default': 'error',
     // Add with v7 of eslint-plugin-vue when it is released.
     // 'vue/no-custom-modifiers-on-v-model': 'error',
