@@ -36,6 +36,7 @@ module.exports = {
     // Add with v7 of eslint-plugin-vue when it is released.
     // 'vue/no-multiple-template-root': 'error',
     'vue/no-reserved-component-names': 'error',
+    'vue/no-static-inline-styles': 'error',
     // Add with v7 of eslint-plugin-vue when it is released.
     // 'vue/no-v-model-argument': 'error',
     'vue/padding-line-between-blocks': 'error',
