@@ -4,7 +4,7 @@
 
 [![license](https://img.shields.io/github/license/tclindner/eslint-config-vue-tc.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/eslint-config-vue-tc/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/eslint-config-vue-tc.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/eslint-config-vue-tc)
-[![CircleCI](https://circleci.com/gh/tclindner/eslint-config-vue-tc.svg?style=svg&circle-token=bd4b177e9f9299133593bd134f769a3ad4a8a841)](https://circleci.com/gh/tclindner/eslint-config-vue-tc)
+![ci](https://github.com/tclindner/eslint-config-vue-tc/workflows/ci/badge.svg?branch=master)
 [![Dependency Status](https://david-dm.org/tclindner/eslint-config-vue-tc.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-vue-tc)
 [![devDependency Status](https://david-dm.org/tclindner/eslint-config-vue-tc/dev-status.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-vue-tc#info=devDependencies)
 
