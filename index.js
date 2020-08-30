@@ -7,7 +7,7 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
-  plugins: ['vue', 'vue-a11y'],
+  plugins: ['vue', 'vuejs-accessibility'],
   env: {
     es6: true,
   },
