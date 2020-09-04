@@ -25,6 +25,8 @@ module.exports = {
       },
     ],
     'vue/max-attributes-per-line': 'off',
+    // This is turned off for compatibility with Prettier
+    'vue/singleline-html-element-content-newline': 'off',
     'vue/no-boolean-default': 'error',
     // Add with v7 of eslint-plugin-vue when it is released.
     // 'vue/no-custom-modifiers-on-v-model': 'error',
