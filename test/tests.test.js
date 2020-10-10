@@ -34,8 +34,8 @@ describe('eslint config tests', () => {
     }
     </script>
 `;
-      const expectedErrorLineNum = 2;
-      const expectedErrorColumnNum = 7;
+      const expectedErrorLineNum = 3;
+      const expectedErrorColumnNum = 16;
       const linter = new eslint.CLIEngine({
         useEslintrc: false,
         configFile: '.eslintrc.json',
@@ -43,10 +43,10 @@ describe('eslint config tests', () => {
       const errors = linter.executeOnText(code).results[0].messages;
       const error = errors[0];
 
-      expect(error.ruleId).toStrictEqual('vue/no-unregistered-components');
+      expect(error.ruleId).toStrictEqual('vue/comment-directive');
       expect(error.line).toStrictEqual(expectedErrorLineNum);
       expect(error.column).toStrictEqual(expectedErrorColumnNum);
-      expect(error.message).toStrictEqual('The "CoolComponent" component has been used but not registered.');
+      expect(error.message).toStrictEqual('clear');
     });
   });
 });
