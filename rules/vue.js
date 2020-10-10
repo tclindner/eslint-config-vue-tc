@@ -33,8 +33,7 @@ module.exports = {
     'vue/no-irregular-whitespace': 'error',
     'vue/no-reserved-component-names': 'error',
     'vue/no-static-inline-styles': 'error',
-    // Add once this is available in eslint-plugin-vue
-    // 'vue/no-template-no-target-blank': 'error',
+    'vue/no-template-target-blank': 'error',
     'vue/no-unregistered-components': 'off',
     'vue/no-unused-properties': 'error',
     'vue/no-useless-mustaches': 'error',
