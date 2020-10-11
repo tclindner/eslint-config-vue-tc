@@ -1,6 +1,6 @@
 const eslint = require('eslint');
 const isPlainObj = require('is-plain-obj');
-const eslintConfig = require('../index.js');
+const eslintConfig = require('..');
 
 describe('eslint config tests', () => {
   describe('eslint object', () => {
