@@ -50,7 +50,7 @@
     "jest": "^26.6.3",
     "npm-package-json-lint": "^5.1.0",
     "npm-package-json-lint-config-tc": "^4.0.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.2.0"
   },
   "peerDependencies": {
     "eslint": "^7.0.0",
