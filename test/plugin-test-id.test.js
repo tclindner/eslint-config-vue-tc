@@ -1,7 +1,7 @@
 const eslint = require('eslint');
 
 describe('test eslint-plugin-test-id', () => {
-  test('It shows error of data-test-id rule', () => {
+  test('`v-model` without `data-test-id`', () => {
     const code = `
       <template>
         <div>
@@ -36,7 +36,7 @@ describe('test eslint-plugin-test-id', () => {
     expect(error.message).toStrictEqual(`Expected 'data-test-id' with v-model.`);
   });
 
-  test('With `data-test-id` attribute', () => {
+  test('`v-model` with `data-test-id`', () => {
     const code = `
       <template>
         <div>
