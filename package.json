@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vue-tc",
-  "version": "6.1.0",
+  "version": "7.0.0",
   "description": "ESLint shareable config for Vue projects",
   "keywords": [
     "eslintconfig",
