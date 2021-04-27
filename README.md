@@ -20,7 +20,7 @@ First thing first, let's make sure you have the necessary pre-requisites.
 
 #### Node
 
-* [Node.js](https://nodejs.org/) - v10.0.0+
+* [Node.js](https://nodejs.org/) - v12.0.0+
 * [npm](http://npmjs.com) - v6.0.0+
 
 ### Command
@@ -68,4 +68,4 @@ Please see the [CHANGELOG.md](CHANGELOG.md) for more information.
 
 ## License
 
-Copyright (c) 2019-2020 Thomas Lindner. Licensed under the MIT license.
+Copyright (c) 2019-2021 Thomas Lindner. Licensed under the MIT license.
