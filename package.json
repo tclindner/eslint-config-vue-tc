@@ -45,7 +45,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-test-id": "^1.1.0",
     "eslint-plugin-unicorn": "^35.0.0",
-    "eslint-plugin-vue": "^7.15.0",
+    "eslint-plugin-vue": "^7.15.1",
     "eslint-plugin-vuejs-accessibility": "^0.6.2",
     "is-plain-obj": "^3.0.0",
     "jest": "^27.0.6",
