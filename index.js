@@ -12,4 +12,15 @@ module.exports = {
   env: {
     es6: true,
   },
+  overrides: [
+    {
+      files: ['**/test/**/*.spec.{j,t}s?(x)', '**/test/**/*.test.{j,t}s?(x)'],
+      env: {
+        jest: true,
+      },
+      rules: {
+        'vue/one-component-per-file': 'off',
+      },
+    },
+  ],
 };
