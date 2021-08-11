@@ -32,7 +32,7 @@
     "eslint": "eslint . --format=node_modules/eslint-formatter-pretty",
     "lint": "npm run npmpackagejsonlint && npm run eslint",
     "npmpackagejsonlint": "npmPkgJsonLint .",
-    "test": "jest"
+    "test": "jest --testPathIgnorePatterns=test/exampleFiles/testFileWithMultipleComponents.test.js"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

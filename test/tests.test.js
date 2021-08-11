@@ -1,4 +1,4 @@
-const eslint = require('eslint');
+const {ESLint} = require('eslint');
 const isPlainObj = require('is-plain-obj');
 const eslintConfig = require('..');
 
@@ -22,7 +22,7 @@ describe('eslint config tests', () => {
   });
 
   describe('run eslint and make sure it runs', () => {
-    test('eslint should run without failing', () => {
+    test('eslint should run without failing', async () => {
       const code = `<template>
       <CoolComponent />
     </template>
@@ -36,12 +36,12 @@ describe('eslint config tests', () => {
 `;
       const expectedErrorLineNum = 3;
       const expectedErrorColumnNum = 16;
-      const linter = new eslint.CLIEngine({
+      const linter = new ESLint({
         useEslintrc: false,
-        configFile: '.eslintrc.json',
+        overrideConfigFile: '.eslintrc.json',
       });
-      const errors = linter.executeOnText(code).results[0].messages;
-      const error = errors[0];
+      const errors = await linter.lintText(code);
+      const error = errors[0].messages[0];
 
       expect(error.ruleId).toStrictEqual('vue/comment-directive');
       expect(error.line).toStrictEqual(expectedErrorLineNum);
