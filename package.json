@@ -29,10 +29,10 @@
   ],
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint . --format=node_modules/eslint-formatter-pretty",
+    "eslint": "eslint . --format=node_modules/eslint-formatter-pretty --ignore-pattern=test/example-files/**",
     "lint": "npm run npmpackagejsonlint && npm run eslint",
     "npmpackagejsonlint": "npmPkgJsonLint .",
-    "test": "jest"
+    "test": "jest --testPathIgnorePatterns=test/example-files/test-file-with-multiple-components.test.js"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

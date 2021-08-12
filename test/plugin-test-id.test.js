@@ -1,7 +1,7 @@
-const eslint = require('eslint');
+const {ESLint} = require('eslint');
 
 describe('test eslint-plugin-test-id', () => {
-  test('`v-model` without `data-test-id`', () => {
+  test('`v-model` without `data-test-id`', async () => {
     const code = `
       <template>
         <div>
@@ -23,12 +23,12 @@ describe('test eslint-plugin-test-id', () => {
     `;
     const expectedErrorLineNum = 4;
     const expectedErrorColumnNum = 11;
-    const linter = new eslint.CLIEngine({
+    const linter = new ESLint({
       useEslintrc: false,
-      configFile: '.eslintrc.json',
+      overrideConfigFile: '.eslintrc.json',
     });
-    const errors = linter.executeOnText(code).results[0].messages;
-    const error = errors[0];
+    const errors = await linter.lintText(code);
+    const error = errors[0].messages[0];
 
     expect(error.ruleId).toStrictEqual('test-id/data-test-id');
     expect(error.line).toStrictEqual(expectedErrorLineNum);
@@ -36,7 +36,7 @@ describe('test eslint-plugin-test-id', () => {
     expect(error.message).toStrictEqual(`Expected 'data-test-id' with v-model.`);
   });
 
-  test('`v-model` with `data-test-id`', () => {
+  test('`v-model` with `data-test-id`', async () => {
     const code = `
       <template>
         <div>
@@ -58,12 +58,12 @@ describe('test eslint-plugin-test-id', () => {
     `;
     const expectedErrorLineNum = 6;
     const expectedErrorColumnNum = 18;
-    const linter = new eslint.CLIEngine({
+    const linter = new ESLint({
       useEslintrc: false,
-      configFile: '.eslintrc.json',
+      overrideConfigFile: '.eslintrc.json',
     });
-    const errors = linter.executeOnText(code).results[0].messages;
-    const error = errors[0];
+    const errors = await linter.lintText(code);
+    const error = errors[0].messages[0];
 
     expect(error.ruleId).toStrictEqual('vue/comment-directive');
     expect(error.line).toStrictEqual(expectedErrorLineNum);
