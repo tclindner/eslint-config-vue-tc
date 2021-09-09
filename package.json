@@ -48,7 +48,7 @@
     "eslint-plugin-vue": "^7.17.0",
     "eslint-plugin-vuejs-accessibility": "^0.7.1",
     "is-plain-obj": "^3.0.0",
-    "jest": "^27.1.0",
+    "jest": "^27.1.1",
     "npm-package-json-lint": "^5.2.3",
     "npm-package-json-lint-config-tc": "^4.1.0",
     "prettier": "^2.3.2"
