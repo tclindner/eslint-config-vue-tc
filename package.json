@@ -56,7 +56,7 @@
   "peerDependencies": {
     "eslint": "^7.0.0",
     "eslint-plugin-test-id": "^1.1.0",
-    "eslint-plugin-vue": "^7.0.0",
+    "eslint-plugin-vue": "^8.0.0",
     "eslint-plugin-vuejs-accessibility": "^1.1.0"
   },
   "engines": {
