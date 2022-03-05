@@ -23,10 +23,7 @@ describe('test eslint-plugin-test-id', () => {
     `;
     const expectedErrorLineNum = 4;
     const expectedErrorColumnNum = 11;
-    const linter = new ESLint({
-      useEslintrc: false,
-      overrideConfigFile: '.eslintrc.json',
-    });
+    const linter = new ESLint();
     const errors = await linter.lintText(code);
     const error = errors[0].messages[0];
 
@@ -58,10 +55,7 @@ describe('test eslint-plugin-test-id', () => {
     `;
     const expectedErrorLineNum = 6;
     const expectedErrorColumnNum = 18;
-    const linter = new ESLint({
-      useEslintrc: false,
-      overrideConfigFile: '.eslintrc.json',
-    });
+    const linter = new ESLint();
     const errors = await linter.lintText(code);
     const error = errors[0].messages[0];
 

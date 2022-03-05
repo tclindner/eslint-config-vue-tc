@@ -2,10 +2,7 @@ const {ESLint} = require('eslint');
 
 describe('test vue/one-component-per-file rule', () => {
   test('testing file - more than one component is allowed', async () => {
-    const linter = new ESLint({
-      useEslintrc: false,
-      overrideConfigFile: '.eslintrc.json',
-    });
+    const linter = new ESLint();
     const errors = await linter.lintFiles('**/example-files/test-file-with-multiple-components.test.js');
     let hasOneComponentPerFileError = false;
 
@@ -21,10 +18,7 @@ describe('test vue/one-component-per-file rule', () => {
   test('non-test file - more than one component is not allowed', async () => {
     const expectedErrorLineNum = 9;
     const expectedErrorColumnNum = 39;
-    const linter = new ESLint({
-      useEslintrc: false,
-      overrideConfigFile: '.eslintrc.json',
-    });
+    const linter = new ESLint();
     const errors = await linter.lintFiles('**/example-files/src-file-with-multiple-components.js');
     const error = errors[0].messages[1];
 
