@@ -9,12 +9,6 @@ describe('eslint config tests', () => {
     });
   });
 
-  describe('parserOptions', () => {
-    test('should be an object', () => {
-      expect(isPlainObj(eslintConfig.parserOptions)).toBe(true);
-    });
-  });
-
   describe('env', () => {
     test('should be an array', () => {
       expect(isPlainObj(eslintConfig.env)).toBe(true);
@@ -36,10 +30,7 @@ describe('eslint config tests', () => {
 `;
       const expectedErrorLineNum = 3;
       const expectedErrorColumnNum = 16;
-      const linter = new ESLint({
-        useEslintrc: false,
-        overrideConfigFile: '.eslintrc.json',
-      });
+      const linter = new ESLint();
       const errors = await linter.lintText(code);
       const error = errors[0].messages[0];
 
