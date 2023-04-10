@@ -37,7 +37,7 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "enhanced-resolve": "^5.12.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "eslint-config-tc": "^22.2.0",
     "eslint-formatter-pretty": "^5.0.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
