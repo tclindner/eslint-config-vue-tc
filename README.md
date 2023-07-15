@@ -5,8 +5,6 @@
 [![license](https://img.shields.io/github/license/tclindner/eslint-config-vue-tc.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/eslint-config-vue-tc/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/eslint-config-vue-tc.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/eslint-config-vue-tc)
 ![ci](https://github.com/tclindner/eslint-config-vue-tc/workflows/ci/badge.svg?branch=master)
-[![Dependency Status](https://david-dm.org/tclindner/eslint-config-vue-tc.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-vue-tc)
-[![devDependency Status](https://david-dm.org/tclindner/eslint-config-vue-tc/dev-status.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-vue-tc#info=devDependencies)
 
 ## What is eslint-config-vue-tc?
 
@@ -20,8 +18,8 @@ First thing first, let's make sure you have the necessary pre-requisites.
 
 #### Node
 
-* [Node.js](https://nodejs.org/) - v14.0.0+
-* [npm](http://npmjs.com) - v6.0.0+
+* [Node.js](https://nodejs.org/) - v16.0.0+
+* [npm](http://npmjs.com) - v8.0.0+
 
 ### Command
 
@@ -68,4 +66,4 @@ Please see the [CHANGELOG.md](CHANGELOG.md) for more information.
 
 ## License
 
-Copyright (c) 2019-2022 Thomas Lindner. Licensed under the MIT license.
+Copyright (c) 2019-2023 Thomas Lindner. Licensed under the MIT license.
